@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #slider {
+            height: 15px !important;
+            width: 15px !important;
+            border-radius: 50%;
+        }
+
+        #decoration {
+            text-decoration: none;
+        }
+
+        #foot {
+            transition: 1s;
+            transform: scale(0.7);
+        }
+
+        #footimg {
+            border-radius: 5px;
+        }
+
+        #foot:hover {
+            transform: scale(1.1);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary my-2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-success fw-bold " id="family" href="#">YAPPY B-DAY BHAVSSSS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav d-flex gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active active-text-success text-dark fs-5" aria-current="page"
+                            href="#imgss">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5" href="#personalities">TRUE COLORS</a>
+                    </li>
+                    <li class="nav-item dropdown fs-5">
+                        <a class="nav-link dropdown-toggle text-dark" href="memorial" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            B-DAY's WITH ME
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#withme1">09-08-2022</a></li>
+                            <li><a class="dropdown-item" href="#withme2">09-08-2023</a></li>
+                            <li><a class="dropdown-item" href="#withme3">09-08-2024</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5" href="#video">WAY TO GET ME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- carousal -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" id="slider" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" id="slider" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" id="slider" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/IMG_20240806_214034.jpg" id="imgss" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><b>WITHOUT YOU, I GOT NOTHING</b></h5>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="./img/IMG_20240806_214046.jpg" id="imgss" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><B>WE'RE FAMILY. WE GOT A PROBLEM, WE DEAL WITH IT TOGETHER</B></h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/IMG_20240806_214204.jpg" id="imgss" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><B>I DON'T TURN MY BACK ON YOU </B></h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+     <br>
+     <br>
+     <br>
+    <div class="text-center" id="personalities">
+        <h1>--- DIFFERENT PERSONALITIES OF BHAVSS ---</h1>
+        <p>Even Now i don't know how many PERSONALITIES you have</p>
+    </div>
+
+    <!-- cards -->
+    <div class="row row-cols-1 row-cols-md-3 g-2 mt-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/happy.jpg" id="cast" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><a id="decoration" class="text-success" href="">HAPPY
+                            BHAVANA</a>
+                    </h5>
+                    <p class="card-text">When i'm around , you feel free to eat anything with me .Because you feel safe
+                        when i'm with you . Everytime we eat , You fell <b>HAPPY</b> and thus what makes me happy too.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 2 years ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/angry.jpg" id="cast" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><a id="decoration" class="text-success" href="">ANGRY
+                            BHAVANA</a></h5>
+                    <p class="card-text">I love to <b>IRRITATE</b> you . You get irritated easily because you’re not as
+                        smart as I am. I know you’re not as smart as me, but please use your brain for once in your
+                        life to do something Meaningful.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 2 years ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/hungry.jpg" id="cast" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> <a id="decoration" class="text-success" href="">HUNGRY
+                            BHAVANA</a>
+                    </h5>
+                    <p class="card-text">You always feel <b>HUNGRY</b> every hour, even if you’re just sitting still. I
+                        can’t
+                        keep up with your constant hunger for more than a day, and I can't endure it. So, please have
+                        <b>MERCY</b> on me.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 2 years ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-2 mt-2">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/mood.jpg" id="cast" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> <a id="decoration" class="text-success" href="">MOODIST
+                            BHAVANA</a></h5>
+                    <p class="card-text">You feel <b>SAD</b> when you don’t get food,You feel <b>IRRITATED</b> when you
+                        have cramps,You'll be <b>ANGRY</b> when I don’t
+                        talk to you.You feel <b>HAPPY</b> when I buy you Food . You even <b>CRY</b> like a child when I
+                        don’t buy food. Is your surname Penmetsa or
+                        Moodist?</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 2 years ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/drama.jpg" id="cast" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> <a id="decoration" class="text-success" href="">DRAMA BHAVANA</a>
+                    </h5>
+                    <p class="card-text"> Penmetsa BHAVANA alias <b>DRAMA QUEEN</b> You're nothing less than a drama
+                        queen. When it comes to food, you act <b>CHILDISHLY</b>, but while
+                        eating, you act like the <b>HAPPIEST</b> person. You have every skill to act in front of me, and
+                        you have different personalities to torment me. Based on all these ,why not call you <b>DRAMA
+                            QUEEN</b>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 2 years ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/psycho.jpg" id="cast" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> <a id="decoration" class="text-success" href="">PSYCHO
+                            BHAVANA</a></h5>
+                    <p class="card-text">You feel happy by irritating me , You even beat me and feels happy , You loves
+                        to
+                        bite me but you should bite me gently not like a <b>PSYCHOPATH</b> , and you even enjoys while
+                        biting and beating me , you even enjoy when i'm in the pain . You're nothing less than a
+                        <b>PSYCHOPATH</b>.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 2 years ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <div class="text-center">
+        <h1>--- B-DAY's WITH ME ---</h1>
+        <p>It's been 3 YEARS since we feel in LOVE</p>
+    </div>
+    <br>
+
+
+    <!-- img -->
+    <img src="./img/3N7A9323.jpg" class="img-fluid" alt="...">
+
+
+    <!-- accordian -->
+    <div class="accordion mt-5" id="accordionExample">
+        <div class="accordion-item" id="withme1">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <b>09-08-2022</b>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex gap-4 flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row">
+                    <img class="movie" src="./img/2022.jpg" alt="">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item" id="withme2">
+            <h2 class="accordion-header" >
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <b>09-08-2023</b>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex gap-4 flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row">
+                    <img class="movie" src="./img/2023.png" alt="">
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item" id="withme3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <b>09-08-2024</b>
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex gap-4 flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row">
+                    <img class="movie" src="./img/2024.jpg" alt="">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-primary " id="video" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Click here
+        </button>
+    </div>
+    <br>
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">MITAI ka SURPRISE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="fs-5">Our Journey</h2>
+                    <p>On February 18, 2022, we started our first journey as lovers. From that moment on, we promised
+                        each other that we would never leave each other, no matter what. We fight, we fix, we
+                        stay—that's the promise. If any problem comes between us, we take care of each other. I love
+                        Bhavsssssss. I love you as long as I breathe, and even after I die, I'll always love you. Once
+                        again, happy birthday, baby!</p>
+                    <hr>
+                    <h2 class="fs-5">Click Below Links for Surprise</h2>
+                    <br>
+                    <p><a href="./link1.html" data-bs-toggle="tooltip"
+                            title="Tooltip">U Already Know</a> <br>
+                        <br>
+                        <a href="./link2.html" data-bs-toggle="tooltip"
+                            title="Tooltip">Have you Remebered This ?</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OKAY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!-- Section: Images -->
+        <section class="">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 g-3 mb-4 mb-md-0" id="foot">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img id="footimg" src="./img/shadow1.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: white;"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 g-3 mb-4 mb-md-0" id="foot">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img id="footimg" src="./img/flower1.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: white;"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 g-3 mb-4 mb-md-0" id="foot">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img id="footimg" src="./img/selfie1.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: white;"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 g-3 mb-4 mb-md-0" id="foot">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img id="footimg" src="./img/selfie2.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: white;"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 g-3 mb-4 mb-md-0" id="foot">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img id="footimg" src="./img/selfie3.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: white;"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 g-3 mb-4 mb-md-0" id="foot">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img id="footimg" src="./img/shadow2.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: white;"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Images -->
+    </div>
+    <br>
+
+
+    <div class="text-center">
+        <h1>--- THIS IS ALL YOU NEED TO KNOW ---</h1>
+        <p>Now Enjoy Your Day ,<span class="text-success fw-bold">HAPPY BIRTHDAY PENMETSA LALITHA SRI BHAVANA </span> alias <span class="text-success fw-bold"> MITAI </span></p>
+    </div>
+    <br>
+
+</body>
+
+</html>
